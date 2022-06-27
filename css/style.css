@@ -1,0 +1,287 @@
+/* start variables */
+:root {
+    --main-color: rgb(76, 110, 3);
+    --secondary-color: rgb(109, 7, 7);
+}
+/* end variables */
+/* start global rules */
+* { 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+}
+section {
+    padding: 100px 200px;
+}
+/* end global rules */
+/* start header */
+header {
+    background-color: rgba(245 245 220 /80%);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+nav a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    padding-left: 30px;
+    font-weight: 500;
+}
+nav a:hover {
+    color: var(--secondary-color);
+}
+/* end header */
+/* start main */
+section {
+    padding: 100px 200px;
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20201104/pngtree-technology-background-binary-computer-code-vector-design-image_458702.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.main .info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.main h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span {
+    display: inline-block;
+    color: var(--main-color);
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.main h3 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main .main-button {
+    color: white;
+    text-decoration: none;
+    background-color: var(--main-color);
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: 0.5s ease; 
+}
+.main .main-button:hover {
+    transform: scale(1.1);
+    background-color: rgb(57, 80, 8);
+}
+.social-icons a {
+    color: #fff;
+    font-size: 1.4em;
+    padding-right: 30px;
+}
+.social-icons a:hover{
+    color: var(--main-color);
+}
+/* end main */
+/* start services */
+.main-titles {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+.content .card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 25px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.5s ease;
+    text-align: center;
+}
+.content .card:hover {
+    transform: scale(1.1);
+}
+.content .card i {
+    color: var(--main-color);
+    font-size: 6em;
+    margin-bottom: 10px;
+}
+.content .card .info h3 {
+    color: var(--main-color);
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.content .card .info p {
+    line-height: normal;
+    color: #777;
+}
+/* end services */
+/* start projects */
+.projects {
+    background-color: rgb(2, 0, 40);
+}
+.projects .content {
+    margin-top: 30px;
+}
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 20em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.5s ease;
+}
+.project-card:hover {
+    transform: scale(1.1);
+}
+.project-img img {
+    width: 100%;
+}
+.project-card:hover .project-img {
+    opacity: 0.9;
+}
+.project-info {
+    padding: 1em;
+}
+.project-info p {
+    font-size: 1.1em;
+}
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+.more-details {
+    text-decoration: none;
+    color: var(--main-color);
+}
+.more-details:hover {
+    color: var(--secondary-color);
+}
+/* end projects */
+/* start contact */
+.contact .content i {
+    font-size: 4.5em;
+}
+.contact .content .info h3 {
+    color: black;
+}
+.contact .content .info p {
+    font-size: 1.5em;
+}
+/* end contact */
+/* start footer */
+.footer {
+    background-color: rgb(2, 0, 40);
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer p {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer span {
+    color: var(--main-color);
+}
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+/* end footer */
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px;
+    }
+    nav a {
+      padding-left: 10px;  
+    }
+    .main-titles {
+        font-size: 1.8em;
+    }
+    section {
+        padding: 80px 20px;
+    }
+    .main h2 span {
+        font-size: 1.8em;
+    }
+    .main .info {
+        top: 60%;
+    }
+    .main h3 {
+        font-size: 1.4em;
+    }
+}
+@media (max-width:641px) {
+    body {
+        font-size: 12px;
+    }
+    .main {
+         font-size: 0.8em;
+    }
+    .main h3 {
+        font-size: 1.4em;
+    }
+}
+@media (max-width:300px) {
+    body {
+        font-size: 10px;
+    }
+    .footer p {
+        font-size: 1.1em;
+    }
+    .footer .social-icons a {
+        font-size: 1.1em;
+        padding: 0 10px 0 0;
+    }
+    nav a {
+        padding-left: 5px;  
+      }
+}
